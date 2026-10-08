@@ -10,6 +10,7 @@ import org.apache.poi.ss.usermodel.WorkbookFactory;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import org.testng.Assert;
+import org.testng.Reporter;
 
 import BaseClassUtility.BaseClass;
 import GenericUtility.TakingScreenShot;
@@ -59,8 +60,8 @@ public class LoginNegative extends BaseClass {
         login.getLoginButton();
 
         String actualError = login.getErrorMessage();
-        System.out.println("Error Message: " + actualError);
-        System.out.println("Username = " + username + " Password = " + password);
+        Reporter.log("Error Message: " + actualError);
+        Reporter.log("Username = " + username + " Password = " + password);
 
         Assert.assertFalse(actualError.isEmpty(), "Error message was not displayed");
 
@@ -75,7 +76,7 @@ public class LoginNegative extends BaseClass {
 
         // System.out.println("Screenshot saved: " + dst.getAbsolutePath());
         TakingScreenShot ts = new TakingScreenShot();
-        ts.getSC(driver, "LoginNegative", username, password);
+        ts.getSC(driver, "LoginNegative");
     }
 }
 

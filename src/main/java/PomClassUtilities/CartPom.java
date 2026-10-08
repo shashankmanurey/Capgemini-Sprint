@@ -1,9 +1,13 @@
 package PomClassUtilities;
 
+import java.time.Duration;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class CartPom {
     WebDriver driver;
@@ -24,14 +28,17 @@ public class CartPom {
 
     public void getRemove()
     {
-        RemoveBtn.click();
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        wait.until(ExpectedConditions.elementToBeClickable(RemoveBtn)).click();
     }
     public void getCheckOut()
     {
-        CheckoutBtn.click();
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        wait.until(ExpectedConditions.elementToBeClickable(CheckoutBtn)).click();
     }
     public void getContinueBtn()
     {
-        ContinueBtn.click();
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        wait.until(ExpectedConditions.elementToBeClickable(ContinueBtn)).click();
     }
 }
