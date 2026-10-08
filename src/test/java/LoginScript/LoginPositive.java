@@ -8,6 +8,7 @@ import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
 import org.testng.Assert;
+import org.testng.Reporter;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
@@ -84,9 +85,9 @@ public class LoginPositive extends BaseClass {
         Assert.assertTrue(login.isPasswordDisplayed(), "Password field is not displayed");
         Assert.assertTrue(login.isLoginButtonDisplayed(),"Login button is not displayed");
 
-        System.out.println("Username field is displayed");
-        System.out.println("Password field is displayed");
-        System.out.println("Login button is displayed");
+        Reporter.log("Username field is displayed");
+        Reporter.log("Password field is displayed");
+        Reporter.log("Login button is displayed");
     }
 
     // TC-LOGIN-02
@@ -102,9 +103,8 @@ public class LoginPositive extends BaseClass {
 
         Assert.assertTrue(login.isProductsPageDisplayed(),"Product Page was not displayed for user: " + username);
 
-        System.out.println("Valid Login Successful");
-
-        System.out.println("Username = " + username);
+        Reporter.log("Valid Login Successful");
+        Reporter.log("Username = " + username);
     }
 
 
@@ -121,7 +121,7 @@ public class LoginPositive extends BaseClass {
 
         Assert.assertTrue(login.isProductsPageDisplayed(),"Login did not navigate to Product Page for user: " + username);
 
-        System.out.println("Navigation successful for: " + username);
+        Reporter.log("Navigation successful for: " + username);
     }
 
 
@@ -138,7 +138,7 @@ public class LoginPositive extends BaseClass {
 
         Assert.assertTrue(login.isProductsPageDisplayed(),"Smoke test failed for user: " + username);
 
-        System.out.println("Smoke Test Passed for: " + username);
+        Reporter.log("Smoke Test Passed for: " + username);
     }
 
 
@@ -155,6 +155,6 @@ public class LoginPositive extends BaseClass {
 
         Assert.assertTrue(login.isProductsPageDisplayed(), "Regression test failed for user: " + username);
 
-        System.out.println("Regression Test Passed for: " + username);
+        Reporter.log("Regression Test Passed for: " + username);
     }
 }
