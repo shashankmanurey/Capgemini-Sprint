@@ -1,5 +1,6 @@
 package LoginScript;
 
+import java.io.File;
 import java.io.FileInputStream;
 
 import org.apache.poi.ss.usermodel.DataFormatter;
@@ -7,6 +8,9 @@ import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.io.FileHandler;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import org.testng.Assert;
@@ -49,7 +53,7 @@ public class LoginNegative extends BaseClass {
     }
 
     @Test(dataProvider = "loginNegativeData")
-    public void loginTest(String username, String password) 
+    public void loginTest(String username, String password) throws Exception
     {
         LoginPom login = new LoginPom(driver);
 
@@ -62,6 +66,17 @@ public class LoginNegative extends BaseClass {
         System.out.println("Username = " + username + " Password = " + password);
 
         Assert.assertFalse(actualError.isEmpty(), "Error message was not displayed");
+
+        //Take screenshot of failure
+        TakesScreenshot t = (TakesScreenshot) driver;
+
+        File src = t.getScreenshotAs(OutputType.FILE);
+
+        String fileName = "Screenshots/LoginNegative_" + username.replaceAll("[^a-zA-Z0-9]", "_")+ "_"+ password.replaceAll("[^a-zA-Z0-9]", "_")+ ".png";
+        File dst = new File(fileName);
+        FileHandler.copy(src, dst);
+
+        System.out.println("Screenshot saved: " + dst.getAbsolutePath());
     }
 }
 
