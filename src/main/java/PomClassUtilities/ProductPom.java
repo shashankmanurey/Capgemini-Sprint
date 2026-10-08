@@ -7,37 +7,77 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 
 public class ProductPom {
+
     WebDriver driver;
-    public ProductPom(WebDriver driver)
-    {
+
+    public ProductPom(WebDriver driver) {
         this.driver = driver;
         PageFactory.initElements(driver, this);
     }
 
-    @FindBy (id = "//select[@class='product_sort_container']")
+    // Product Page
+    @FindBy(xpath = "//select[@class='product_sort_container']")
     private WebElement SortBtn;
 
-    @FindBy (id = "//a[@data-test='shopping-cart-link']")
+    @FindBy(xpath = "//a[@data-test='shopping-cart-link']")
     private WebElement CartBtn;
 
-    @FindBy (id = "add-to-cart-sauce-labs-backpack")
+    @FindBy(id = "add-to-cart-sauce-labs-backpack")
     private WebElement AddToCartBtn;
 
+    @FindBy(xpath = "//div[@data-test='inventory-item']")
+    private WebElement ProductCard;
+
+    @FindBy(xpath = "//div[@data-test='inventory-item-name']")
+    private WebElement ProductName;
+
     //Getters
-    public void getSort()
-    {
-        SortBtn.click();
+    public void getSort() {
         Select s1 = new Select(SortBtn);
         s1.selectByIndex(1);
     }
-    public void getCart()
-    {
+
+    public void sortByNameAZ() {
+        Select s1 = new Select(SortBtn);
+        s1.selectByValue("az");
+    }
+
+    public void sortByNameZA() {
+        Select s1 = new Select(SortBtn);
+        s1.selectByValue("za");
+    }
+
+    public void sortByPriceLowToHigh() {
+        Select s1 = new Select(SortBtn);
+        s1.selectByValue("lohi");
+    }
+
+    public void sortByPriceHighToLow() {
+        Select s1 = new Select(SortBtn);
+        s1.selectByValue("hilo");
+    }
+
+    public void getCart() {
         CartBtn.click();
     }
-    public void getAddTOCart()
-    {
+
+    public void getAddTOCart() {
         AddToCartBtn.click();
-    } 
+    }
 
+    public boolean isProductDisplayed() {
+        return ProductCard.isDisplayed();
+    }
 
+    public boolean isProductNameDisplayed() {
+        return ProductName.isDisplayed();
+    }
+
+    public boolean isAddToCartDisplayed() {
+        return AddToCartBtn.isDisplayed();
+    }
+
+    public boolean isCartDisplayed() {
+        return CartBtn.isDisplayed();
+    }
 }
