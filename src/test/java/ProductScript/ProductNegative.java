@@ -8,21 +8,14 @@ import org.testng.annotations.Test;
 import BaseClassUtility.BaseClass;
 import GenericUtility.TakingScreenShot;
 import PomClassUtilities.CartPom;
-import PomClassUtilities.LoginPom;
 import PomClassUtilities.ProductPom;
 
 public class ProductNegative extends BaseClass {
 
     @BeforeMethod
-    public void loginToApplication() {
-
-        LoginPom login = new LoginPom(driver);
-
-        login.getUsername("standard_user");
-        login.getPassword("secret_sauce");
-        login.getLoginButton();
-
-        Reporter.log("Logged in successfully and navigated to Product Page", true);
+    public void loginBeforeTest() throws Exception
+    {
+        loginToApplication();
     }
 
     // TC-PROD-04

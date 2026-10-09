@@ -15,22 +15,18 @@ import BaseClassUtility.BaseClass;
 import GenericUtility.TakingScreenShot;
 import PomClassUtilities.CartPom;
 import PomClassUtilities.CheckOutPom;
-import PomClassUtilities.LoginPom;
 import PomClassUtilities.ProductPom;
 
 public class CheckoutNegative extends BaseClass {
     @BeforeMethod
-    public void loginToApplication()
+    public void loginBeforeTest() throws Exception 
     {
-        LoginPom login = new LoginPom(driver);
-        login.getUsername("standard_user");
-        login.getPassword("secret_sauce");
-        login.getLoginButton();
+        loginToApplication();
     }
 
     // TC-CHK-06
     // Verify blank First Name is rejected
-    @Test(groups = {"Negative"})
+    @Test(groups = {"negative"})
     public void verifyBlankFirstNameIsRejected() throws Exception
     {
         ProductPom product = new ProductPom(driver);
@@ -68,7 +64,7 @@ public class CheckoutNegative extends BaseClass {
 
     // TC-CHK-07
     // Verify blank Last Name is rejected
-    @Test(groups = {"Negative"})
+    @Test(groups = {"negative"})
     public void verifyBlankLastNameIsRejected() throws Exception
     {
         ProductPom product = new ProductPom(driver);
@@ -106,7 +102,7 @@ public class CheckoutNegative extends BaseClass {
 
     // TC-CHK-08
     // Verify blank Zip is rejected
-    @Test(groups = {"Negative"})
+    @Test(groups = {"negative"})
     public void verifyBlankZipIsRejected() throws Exception
     {
         ProductPom product = new ProductPom(driver);

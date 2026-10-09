@@ -15,23 +15,19 @@ import BaseClassUtility.BaseClass;
 import PomClassUtilities.CartPom;
 import PomClassUtilities.CheckOutPom;
 import PomClassUtilities.CompletePagePom;
-import PomClassUtilities.LoginPom;
 import PomClassUtilities.OverviewPom;
 import PomClassUtilities.ProductPom;
 
 public class CheckoutPositive extends BaseClass {
     @BeforeMethod
-    public void loginToApplication()
+    public void loginBeforeTest() throws Exception 
     {
-        LoginPom login = new LoginPom(driver);
-        login.getUsername("standard_user");
-        login.getPassword("secret_sauce");
-        login.getLoginButton();
+        loginToApplication();
     }
 
     //TC-CHK-01
     //Verify Checkout Information fields and controls
-    @Test(groups = {"Functionality"})
+    @Test(groups = {"functionality"})
     public void verifyInfoFields()
     {
         ProductPom product = new ProductPom(driver);
@@ -60,7 +56,7 @@ public class CheckoutPositive extends BaseClass {
 
     //TC-CHK-02
     //Verify valid checkout information is accepted
-    @Test(groups = {"Functionality"})
+    @Test(groups = {"functionality"})
     public void verifyValidCheckoutInformation() throws Exception
     {
         ProductPom product = new ProductPom(driver);
@@ -96,7 +92,7 @@ public class CheckoutPositive extends BaseClass {
 
     //TC-CHK-03
     //Verify Checkout Overview product visibility and controls
-    @Test(groups = {"Functionality"})
+    @Test(groups = {"functionality"})
     public void verifyCheckoutOverview() throws Exception
     {
         ProductPom product = new ProductPom(driver);
@@ -141,7 +137,7 @@ public class CheckoutPositive extends BaseClass {
 
     //TC-CHK-04
     //Verify Checkout Information to Checkout Overview integration
-    @Test(groups = {"Integration"})
+    @Test(groups = {"integration"})
     public void verifyCheckoutInformationToOverview() throws Exception
     {
         ProductPom product = new ProductPom(driver);
@@ -180,7 +176,7 @@ public class CheckoutPositive extends BaseClass {
 
     //TC-CHK-05
     //Verify Checkout Complete page and Back Home
-    @Test(groups = {"Integration"})
+    @Test(groups = {"integration"})
     public void verifyCheckoutCompletePage() throws  Exception
     {
         ProductPom product = new ProductPom(driver);
@@ -263,7 +259,7 @@ public class CheckoutPositive extends BaseClass {
 
     //TC-CHK-10
     // Verify complete system purchase flow
-    @Test(groups = {"System"})
+    @Test(groups = {"system"})
     public void verifyCompleteSystemPurchaseFlow() throws  Exception
     {
         ProductPom product = new ProductPom(driver);

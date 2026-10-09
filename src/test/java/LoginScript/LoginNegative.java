@@ -50,7 +50,7 @@ public class LoginNegative extends BaseClass {
         return data;
     }
 
-    @Test(dataProvider = "loginNegativeData")
+    @Test(dataProvider = "loginNegativeData", groups = {"negative"})
     public void loginTest(String username, String password) throws Exception
     {
         LoginPom login = new LoginPom(driver);
