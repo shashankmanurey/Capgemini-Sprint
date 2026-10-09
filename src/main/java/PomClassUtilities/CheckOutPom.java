@@ -25,6 +25,9 @@ public class CheckOutPom {
     @FindBy (id = "continue")
     private WebElement ContinueCheckOut;
 
+    @FindBy (id = "cancel")
+    private WebElement CancelCheckout;
+
     //Getters
     public void getFirstname(String value)
     {
@@ -44,5 +47,25 @@ public class CheckOutPom {
     public void getContinueCheckOut()
     {
         ContinueCheckOut.click();
+    }
+    public boolean firstIsDisplayed()
+    {
+        return Firstname.isDisplayed();
+    }
+    public boolean lastIsDisplayed()
+    {
+        return Lastname.isDisplayed();
+    }
+    public boolean postalIsDisplayed()
+    {
+        return postalcode.isDisplayed();
+    }
+    public boolean continueIsDisplayed()
+    {
+        return ContinueCheckOut.isDisplayed();
+    }
+    public boolean cancelIsDisplayed()
+    {
+        return CancelCheckout.isDisplayed();
     }
 }
