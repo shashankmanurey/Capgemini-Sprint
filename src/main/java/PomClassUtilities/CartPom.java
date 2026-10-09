@@ -2,6 +2,7 @@ package PomClassUtilities;
 
 import java.time.Duration;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -40,5 +41,30 @@ public class CartPom {
     {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         wait.until(ExpectedConditions.elementToBeClickable(ContinueBtn)).click();
+    }
+    
+    public boolean isProductDisplayed() 
+    {
+        return driver.findElements(By.xpath("//div[@data-test='inventory-item']")).size() > 0;
+    }
+
+    public boolean isCheckoutDisplayed() 
+    {
+        return CheckoutBtn.isDisplayed();
+    }
+
+    public boolean isContinueShoppingDisplayed() 
+    {
+        return ContinueBtn.isDisplayed();
+    }
+
+    public boolean isRemoveDisplayed() 
+    {
+        return RemoveBtn.isDisplayed();
+    }
+
+    public boolean isCartEmpty() 
+    {
+        return driver.findElements(By.xpath("//div[@data-test='inventory-item']")).isEmpty();
     }
 }
