@@ -19,6 +19,12 @@ public class OverviewPom {
     @FindBy (id = "cancel")
     private WebElement CancelBtn;
 
+    @FindBy (xpath ="//span[text()='Checkout: Overview']")
+    private WebElement OverviewTitle;
+
+    @FindBy (xpath = "//div[@class='inventory_item_name']")
+    private WebElement item;
+
     //Getters
     public void getFinishBtn()
     {
@@ -27,6 +33,22 @@ public class OverviewPom {
     public void getCancelBtn()
     {
         CancelBtn.click();
+    }
+    public boolean isFinishDisplayed()
+    {
+        return FinishBtn.isDisplayed();
+    }
+    public boolean isCancelDisplayed()
+    {
+        return CancelBtn.isDisplayed();
+    }
+    public boolean isOverviewDisplayed()
+    {
+        return OverviewTitle.isDisplayed();
+    }
+    public boolean isItemDisplayed()
+    {
+        return item.isDisplayed();
     }
 }
 

@@ -28,4 +28,8 @@ public class CompletePagePom {
     {
         GenPdf.click();
     }
+    public boolean isThankyouDisplayed()
+    {
+        return BackBtn.isDisplayed();
+    }
 }
