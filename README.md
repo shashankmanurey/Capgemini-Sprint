@@ -91,6 +91,7 @@ Capgemini-Sprint/
 ├── testng-cross-browser.xml
 ├── Screenshots/
 ├── target/
+├── test-output/
 ├── .gitignore
 ├── imp.txt
 └── README.md
@@ -354,11 +355,21 @@ stateDiagram-v2
 ## Test Reporting
 
 The project outputs test results under:
-- `target/surefire-reports/`
-- `test-output/`
-- `Screenshots/`
+- `target/surefire-reports/` - Maven-generated HTML and XML reports for executed test cases
+- `test-output/` - custom/testng output folder containing execution summaries and HTML artifacts generated during validation runs
+- `Screenshots/` - captured screenshots for failed or critical steps for debugging and audit purposes
 
 These artifacts help review failure reasons, HTML reports, and screenshots for failed steps.
+
+### Purpose of `test-output/`
+
+The `test-output/` folder stores generated reports produced during test execution, including:
+- HTML test result pages
+- aggregated Suite reports
+- browser execution artifacts
+- supplementary result files created by TestNG or custom reporting setups
+
+This folder is especially useful when reviewing the run history without relying solely on Maven's default output directory.
 
 ## Detailed Example of Test Flow
 
