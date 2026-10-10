@@ -1,0 +1,242 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>13/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Fri Oct 09 19:16:15 IST 2026</td>
+</tr>
+<tr><td>Total time:</td><td>137 seconds (137650 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td>negative </td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='CartScript.CartNegative.verifyEmptyCart()'><b>verifyEmptyCart</b><br>Test class: CartScript.CartNegative<br/>
+<a href="#Output-1923810797" onClick='toggleBox("Output-1923810797", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1923810797" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1923810797">
+Cart Page opened successfully<br/>
+Empty Cart does not contain any selected product<br/>
+</div>
+</td>
+<td></td>
+<td>15</td>
+<td>CartScript.CartNegative@4562e04d</td></tr>
+<tr>
+<td title='LoginScript.LoginNegative.loginTest()'><b>loginTest</b><br>Test class: LoginScript.LoginNegative<br>Parameters: , secret_sauce<br/>
+<a href="#Output-635340952" onClick='toggleBox("Output-635340952", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-635340952" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-635340952">
+Error Message: Epic sadface: Username is required<br/>
+Username =  Password = secret_sauce<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>LoginScript.LoginNegative@5c6648b0</td></tr>
+<tr>
+<td title='ProductScript.ProductNegative.verifyEmptyCartNavigation()'><b>verifyEmptyCartNavigation</b><br>Test class: ProductScript.ProductNegative<br/>
+<a href="#Output-1817897213" onClick='toggleBox("Output-1817897213", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1817897213" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1817897213">
+Cart Page opened successfully with no selected product<br/>
+Empty Cart state is handled correctly<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>ProductScript.ProductNegative@6f1de4c7</td></tr>
+<tr>
+<td title='CheckoutScript.CheckoutNegative.verifyBlankZipIsRejected()'><b>verifyBlankZipIsRejected</b><br>Test class: CheckoutScript.CheckoutNegative<br/>
+<a href="#Output-1364898802" onClick='toggleBox("Output-1364898802", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1364898802" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1364898802">
+Blank Zip Code was rejected and Checkout Information page remained displayed<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>CheckoutScript.CheckoutNegative@2a65fe7c</td></tr>
+<tr>
+<td title='LoginScript.LoginNegative.loginTest()'><b>loginTest</b><br>Test class: LoginScript.LoginNegative<br>Parameters: standard_user, invalid_password<br/>
+<a href="#Output-1688277354" onClick='toggleBox("Output-1688277354", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1688277354" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1688277354">
+Error Message: Epic sadface: Username and password do not match any user in this service<br/>
+Username = standard_user Password = invalid_password<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>LoginScript.LoginNegative@5c6648b0</td></tr>
+<tr>
+<td title='LoginScript.LoginNegative.loginTest()'><b>loginTest</b><br>Test class: LoginScript.LoginNegative<br>Parameters: standard_user, <br/>
+<a href="#Output-1488550933" onClick='toggleBox("Output-1488550933", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1488550933" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1488550933">
+Error Message: Epic sadface: Password is required<br/>
+Username = standard_user Password = <br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>LoginScript.LoginNegative@5c6648b0</td></tr>
+<tr>
+<td title='CheckoutScript.CheckoutNegative.verifyBlankFirstNameIsRejected()'><b>verifyBlankFirstNameIsRejected</b><br>Test class: CheckoutScript.CheckoutNegative<br/>
+<a href="#Output-925410680" onClick='toggleBox("Output-925410680", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-925410680" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-925410680">
+Blank First Name was rejected and Checkout Information page remained displayed<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>CheckoutScript.CheckoutNegative@2a65fe7c</td></tr>
+<tr>
+<td title='LoginScript.LoginNegative.loginTest()'><b>loginTest</b><br>Test class: LoginScript.LoginNegative<br>Parameters: invalid_user, secret_sauce<br/>
+<a href="#Output-92694321" onClick='toggleBox("Output-92694321", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-92694321" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-92694321">
+Error Message: Epic sadface: Username and password do not match any user in this service<br/>
+Username = invalid_user Password = secret_sauce<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>LoginScript.LoginNegative@5c6648b0</td></tr>
+<tr>
+<td title='HamburgerScript.HamburgerNegative.verifyResetWithEmptyCart()'><b>verifyResetWithEmptyCart</b><br>Test class: HamburgerScript.HamburgerNegative<br/>
+<a href="#Output-1370224403" onClick='toggleBox("Output-1370224403", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1370224403" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1370224403">
+Reset App State handles an empty cart correctly<br/>
+</div>
+</td>
+<td></td>
+<td>45</td>
+<td>HamburgerScript.HamburgerNegative@5c33f1a9</td></tr>
+<tr>
+<td title='ProductScript.ProductNegative.verifyProductAfterRemoval()'><b>verifyProductAfterRemoval</b><br>Test class: ProductScript.ProductNegative<br/>
+<a href="#Output-1461520677" onClick='toggleBox("Output-1461520677", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1461520677" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1461520677">
+Add to Cart is available again after product removal<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>ProductScript.ProductNegative@6f1de4c7</td></tr>
+<tr>
+<td title='CheckoutScript.CheckoutNegative.verifyBlankLastNameIsRejected()'><b>verifyBlankLastNameIsRejected</b><br>Test class: CheckoutScript.CheckoutNegative<br/>
+<a href="#Output-1492325929" onClick='toggleBox("Output-1492325929", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1492325929" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1492325929">
+Blank Last Name was rejected and Checkout Information page remained displayed<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>CheckoutScript.CheckoutNegative@2a65fe7c</td></tr>
+<tr>
+<td title='HamburgerScript.HamburgerNegative.verifyMenuUnavailableAfterLogout()'><b>verifyMenuUnavailableAfterLogout</b><br>Test class: HamburgerScript.HamburgerNegative<br/>
+<a href="#Output-1629353699" onClick='toggleBox("Output-1629353699", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1629353699" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1629353699">
+Hamburger menu is unavailable after Logout<br/>
+</div>
+</td>
+<td></td>
+<td>15</td>
+<td>HamburgerScript.HamburgerNegative@5c33f1a9</td></tr>
+<tr>
+<td title='CartScript.CartNegative.verifyRemovedProductNotPresent()'><b>verifyRemovedProductNotPresent</b><br>Test class: CartScript.CartNegative<br/>
+<a href="#Output-408909888" onClick='toggleBox("Output-408909888", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-408909888" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-408909888">
+Removed product is no longer present in Cart<br/>
+</div>
+</td>
+<td></td>
+<td>15</td>
+<td>CartScript.CartNegative@4562e04d</td></tr>
+</table><p>
+</body>
+</html>

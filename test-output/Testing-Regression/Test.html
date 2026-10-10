@@ -1,0 +1,228 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>12/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Fri Oct 09 18:58:15 IST 2026</td>
+</tr>
+<tr><td>Total time:</td><td>100 seconds (100662 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td>regression </td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='CartScript.CartPositive.verifyCartContentsAfterReturning()'><b>verifyCartContentsAfterReturning</b><br>Test class: CartScript.CartPositive<br/>
+<a href="#Output-421191743" onClick='toggleBox("Output-421191743", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-421191743" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-421191743">
+Product is displayed in Cart<br/>
+Returned to Product Page successfully<br/>
+Cart contents are retained after returning from Product Page<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>CartScript.CartPositive@2f9f7dcf</td></tr>
+<tr>
+<td title='ProductScript.ProductPositive.verifyAddToCartAfterFilter()'><b>verifyAddToCartAfterFilter</b><br>Test class: ProductScript.ProductPositive<br/>
+<a href="#Output-10380027" onClick='toggleBox("Output-10380027", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-10380027" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-10380027">
+Add to Cart after filter Regression Test Passed<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>ProductScript.ProductPositive@2a4fb17b</td></tr>
+<tr>
+<td title='CartScript.CartPositive.verifyRemoveAfterReturningToCart()'><b>verifyRemoveAfterReturningToCart</b><br>Test class: CartScript.CartPositive<br/>
+<a href="#Output-1986581856" onClick='toggleBox("Output-1986581856", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1986581856" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1986581856">
+Remove action works correctly after returning to Cart<br/>
+</div>
+</td>
+<td></td>
+<td>15</td>
+<td>CartScript.CartPositive@2f9f7dcf</td></tr>
+<tr>
+<td title='LoginScript.LoginPositive.loginRegressionTest()'><b>loginRegressionTest</b><br>Test class: LoginScript.LoginPositive<br>Parameters: visual_user, secret_sauce<br/>
+<a href="#Output-650777250" onClick='toggleBox("Output-650777250", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-650777250" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-650777250">
+Regression Test Passed for: visual_user<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>LoginScript.LoginPositive@34a3d150</td></tr>
+<tr>
+<td title='CheckoutScript.CheckoutPositive.verifyCheckoutRegressionFlow()'><b>verifyCheckoutRegressionFlow</b><br>Test class: CheckoutScript.CheckoutPositive<br/>
+<a href="#Output-295372946" onClick='toggleBox("Output-295372946", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-295372946" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-295372946">
+Checkout regression flow completed successfully and order confirmation is displayed<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>CheckoutScript.CheckoutPositive@4135c3b</td></tr>
+<tr>
+<td title='HamburgerScript.HamburgerPositive.verifyResetAfterAddAndRemove()'><b>verifyResetAfterAddAndRemove</b><br>Test class: HamburgerScript.HamburgerPositive<br/>
+<a href="#Output-1389624061" onClick='toggleBox("Output-1389624061", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1389624061" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1389624061">
+Reset App State cleared the cart after add/remove operations<br/>
+</div>
+</td>
+<td></td>
+<td>31</td>
+<td>HamburgerScript.HamburgerPositive@6302bbb1</td></tr>
+<tr>
+<td title='LoginScript.LoginPositive.loginRegressionTest()'><b>loginRegressionTest</b><br>Test class: LoginScript.LoginPositive<br>Parameters: standard_user, secret_sauce<br/>
+<a href="#Output-1929576211" onClick='toggleBox("Output-1929576211", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1929576211" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1929576211">
+Regression Test Passed for: standard_user<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>LoginScript.LoginPositive@34a3d150</td></tr>
+<tr>
+<td title='LoginScript.LoginPositive.loginRegressionTest()'><b>loginRegressionTest</b><br>Test class: LoginScript.LoginPositive<br>Parameters: error_user, secret_sauce<br/>
+<a href="#Output-288537251" onClick='toggleBox("Output-288537251", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-288537251" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-288537251">
+Regression Test Passed for: error_user<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>LoginScript.LoginPositive@34a3d150</td></tr>
+<tr>
+<td title='ProductScript.ProductPositive.verifyProductVisibilityAfterSorting()'><b>verifyProductVisibilityAfterSorting</b><br>Test class: ProductScript.ProductPositive<br/>
+<a href="#Output-1430053704" onClick='toggleBox("Output-1430053704", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1430053704" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1430053704">
+Products remain visible after Name A to Z sorting<br/>
+Products remain visible after Price Low to High sorting<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>ProductScript.ProductPositive@2a4fb17b</td></tr>
+<tr>
+<td title='LoginScript.LoginPositive.loginRegressionTest()'><b>loginRegressionTest</b><br>Test class: LoginScript.LoginPositive<br>Parameters: problem_user, secret_sauce<br/>
+<a href="#Output-893281161" onClick='toggleBox("Output-893281161", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-893281161" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-893281161">
+Regression Test Passed for: problem_user<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>LoginScript.LoginPositive@34a3d150</td></tr>
+<tr>
+<td title='HamburgerScript.HamburgerPositive.verifyLogoutAfterNavigation()'><b>verifyLogoutAfterNavigation</b><br>Test class: HamburgerScript.HamburgerPositive<br/>
+<a href="#Output-164052991" onClick='toggleBox("Output-164052991", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-164052991" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-164052991">
+Navigated to Cart Page successfully<br/>
+Logout works after Product and Cart navigation<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>HamburgerScript.HamburgerPositive@6302bbb1</td></tr>
+<tr>
+<td title='LoginScript.LoginPositive.loginRegressionTest()'><b>loginRegressionTest</b><br>Test class: LoginScript.LoginPositive<br>Parameters: performance_glitch_user, secret_sauce<br/>
+<a href="#Output-1361241279" onClick='toggleBox("Output-1361241279", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1361241279" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1361241279">
+Regression Test Passed for: performance_glitch_user<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>LoginScript.LoginPositive@34a3d150</td></tr>
+</table><p>
+</body>
+</html>

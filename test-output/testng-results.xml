@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="45" total="47" passed="2" failed="0" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[Logged in successfully and navigated to Product Page]]>
+    </line>
+    <line>
+      <![CDATA[Login successful and Products page is displayed]]>
+    </line>
+    <line>
+      <![CDATA[Product added to cart successfully]]>
+    </line>
+    <line>
+      <![CDATA[Cart opened and selected product is displayed]]>
+    </line>
+    <line>
+      <![CDATA[Checkout Information page is displayed]]>
+    </line>
+    <line>
+      <![CDATA[Valid checkout information entered successfully]]>
+    </line>
+    <line>
+      <![CDATA[Checkout Information submitted and Checkout Overview is displayed]]>
+    </line>
+    <line>
+      <![CDATA[Complete system purchase flow completed successfully and order confirmation is displayed]]>
+    </line>
+    <line>
+      <![CDATA[Logged in successfully and navigated to Product Page]]>
+    </line>
+    <line>
+      <![CDATA[Hamburger menu controls are displayed]]>
+    </line>
+    <line>
+      <![CDATA[Added product is present in Cart]]>
+    </line>
+    <line>
+      <![CDATA[Cart state reset successfully]]>
+    </line>
+    <line>
+      <![CDATA[Complete Hamburger menu workflow passed]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2026-10-10T11:45:28 IST" name="Testing-System" finished-at="2026-10-10T11:45:55 IST" duration-ms="27078">
+    <groups>
+      <group name="system">
+        <method signature="CheckoutPositive.verifyCompleteSystemPurchaseFlow()[pri:0, instance:CheckoutScript.CheckoutPositive@1bd4fdd]" name="verifyCompleteSystemPurchaseFlow" class="CheckoutScript.CheckoutPositive"/>
+        <method signature="HamburgerPositive.verifyCompleteHamburgerWorkflow()[pri:0, instance:HamburgerScript.HamburgerPositive@6302bbb1]" name="verifyCompleteHamburgerWorkflow" class="HamburgerScript.HamburgerPositive"/>
+      </group> <!-- system -->
+    </groups>
+    <test started-at="2026-10-10T11:45:28 IST" name="Test" finished-at="2026-10-10T11:45:55 IST" duration-ms="27078">
+      <class name="CheckoutScript.CheckoutPositive">
+        <test-method is-config="true" signature="openApplication()[pri:0, instance:CheckoutScript.CheckoutPositive@1bd4fdd]" started-at="2026-10-10T11:45:28 IST" name="openApplication" finished-at="2026-10-10T11:45:32 IST" duration-ms="3342" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openApplication -->
+        <test-method is-config="true" signature="loginBeforeTest()[pri:0, instance:CheckoutScript.CheckoutPositive@1bd4fdd]" started-at="2026-10-10T11:45:32 IST" name="loginBeforeTest" finished-at="2026-10-10T11:45:32 IST" duration-ms="745" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Logged in successfully and navigated to Product Page]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- loginBeforeTest -->
+        <test-method signature="verifyCompleteSystemPurchaseFlow()[pri:0, instance:CheckoutScript.CheckoutPositive@1bd4fdd]" started-at="2026-10-10T11:45:32 IST" name="verifyCompleteSystemPurchaseFlow" finished-at="2026-10-10T11:45:35 IST" duration-ms="2915" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Login successful and Products page is displayed]]>
+            </line>
+            <line>
+              <![CDATA[Product added to cart successfully]]>
+            </line>
+            <line>
+              <![CDATA[Cart opened and selected product is displayed]]>
+            </line>
+            <line>
+              <![CDATA[Checkout Information page is displayed]]>
+            </line>
+            <line>
+              <![CDATA[Valid checkout information entered successfully]]>
+            </line>
+            <line>
+              <![CDATA[Checkout Information submitted and Checkout Overview is displayed]]>
+            </line>
+            <line>
+              <![CDATA[Complete system purchase flow completed successfully and order confirmation is displayed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyCompleteSystemPurchaseFlow -->
+        <test-method is-config="true" signature="closeApplication()[pri:0, instance:CheckoutScript.CheckoutPositive@1bd4fdd]" started-at="2026-10-10T11:45:35 IST" name="closeApplication" finished-at="2026-10-10T11:45:36 IST" duration-ms="365" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApplication -->
+      </class> <!-- CheckoutScript.CheckoutPositive -->
+      <class name="HamburgerScript.HamburgerNegative">
+        <test-method is-config="true" signature="Bs()[pri:0, instance:HamburgerScript.HamburgerNegative@5c33f1a9]" started-at="2026-10-10T11:45:28 IST" name="Bs" finished-at="2026-10-10T11:45:28 IST" duration-ms="12" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Bs -->
+        <test-method is-config="true" signature="Bt()[pri:0, instance:HamburgerScript.HamburgerNegative@5c33f1a9]" started-at="2026-10-10T11:45:28 IST" name="Bt" finished-at="2026-10-10T11:45:28 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Bt -->
+        <test-method is-config="true" signature="At()[pri:0, instance:HamburgerScript.HamburgerNegative@5c33f1a9]" started-at="2026-10-10T11:45:55 IST" name="At" finished-at="2026-10-10T11:45:55 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- At -->
+        <test-method is-config="true" signature="As()[pri:0, instance:HamburgerScript.HamburgerNegative@5c33f1a9]" started-at="2026-10-10T11:45:55 IST" name="As" finished-at="2026-10-10T11:45:55 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- As -->
+      </class> <!-- HamburgerScript.HamburgerNegative -->
+      <class name="HamburgerScript.HamburgerPositive">
+        <test-method is-config="true" signature="openApplication()[pri:0, instance:HamburgerScript.HamburgerPositive@6302bbb1]" started-at="2026-10-10T11:45:36 IST" name="openApplication" finished-at="2026-10-10T11:45:37 IST" duration-ms="1662" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openApplication -->
+        <test-method is-config="true" signature="loginBeforeTest()[pri:0, instance:HamburgerScript.HamburgerPositive@6302bbb1]" started-at="2026-10-10T11:45:37 IST" name="loginBeforeTest" finished-at="2026-10-10T11:45:38 IST" duration-ms="528" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Logged in successfully and navigated to Product Page]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- loginBeforeTest -->
+        <test-method signature="verifyCompleteHamburgerWorkflow()[pri:0, instance:HamburgerScript.HamburgerPositive@6302bbb1]" started-at="2026-10-10T11:45:38 IST" name="verifyCompleteHamburgerWorkflow" finished-at="2026-10-10T11:45:55 IST" duration-ms="17154" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Hamburger menu controls are displayed]]>
+            </line>
+            <line>
+              <![CDATA[Added product is present in Cart]]>
+            </line>
+            <line>
+              <![CDATA[Cart state reset successfully]]>
+            </line>
+            <line>
+              <![CDATA[Complete Hamburger menu workflow passed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyCompleteHamburgerWorkflow -->
+        <test-method is-config="true" signature="closeApplication()[pri:0, instance:HamburgerScript.HamburgerPositive@6302bbb1]" started-at="2026-10-10T11:45:55 IST" name="closeApplication" finished-at="2026-10-10T11:45:55 IST" duration-ms="302" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApplication -->
+      </class> <!-- HamburgerScript.HamburgerPositive -->
+    </test> <!-- Test -->
+  </suite> <!-- Testing-System -->
+</testng-results>

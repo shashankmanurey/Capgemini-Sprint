@@ -50,19 +50,19 @@ target/
 # TestNG / Test Reports
 # =========================
 
-test-output/
-surefire-reports/
-failsafe-reports/
+# test-output/
+# surefire-reports/
+# failsafe-reports/
 
 
 # =========================
 # Selenium
 # =========================
 
-screenshots/
-*.png
-*.jpg
-*.jpeg
+# screenshots/
+# *.png
+# *.jpg
+# *.jpeg
 
 
 # =========================

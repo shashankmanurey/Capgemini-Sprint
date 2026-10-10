@@ -1,0 +1,293 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>16/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Fri Oct 09 18:51:36 IST 2026</td>
+</tr>
+<tr><td>Total time:</td><td>104 seconds (104093 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td>functionality </td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='LoginScript.LoginPositive.validLoginTest()'><b>validLoginTest</b><br>Test class: LoginScript.LoginPositive<br>Parameters: standard_user, secret_sauce<br/>
+<a href="#Output-1134384220" onClick='toggleBox("Output-1134384220", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1134384220" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1134384220">
+Valid Login Successful<br/>
+Username = standard_user<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>LoginScript.LoginPositive@34a3d150</td></tr>
+<tr>
+<td title='LoginScript.LoginPositive.validLoginTest()'><b>validLoginTest</b><br>Test class: LoginScript.LoginPositive<br>Parameters: performance_glitch_user, secret_sauce<br/>
+<a href="#Output-1496396949" onClick='toggleBox("Output-1496396949", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1496396949" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1496396949">
+Valid Login Successful<br/>
+Username = performance_glitch_user<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>LoginScript.LoginPositive@34a3d150</td></tr>
+<tr>
+<td title='LoginScript.LogoutScript.verifyLogOut()'><b>verifyLogOut</b><br>Test class: LoginScript.LogoutScript<br/>
+<a href="#Output-1713247129" onClick='toggleBox("Output-1713247129", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1713247129" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1713247129">
+The Logout Functionality is working as expected<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>LoginScript.LogoutScript@31304f14</td></tr>
+<tr>
+<td title='LoginScript.LoginPositive.verifyLoginPageControls()'><b>verifyLoginPageControls</b><br>Test class: LoginScript.LoginPositive<br/>
+<a href="#Output-1905209480" onClick='toggleBox("Output-1905209480", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1905209480" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1905209480">
+Username field is displayed<br/>
+Password field is displayed<br/>
+Login button is displayed<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>LoginScript.LoginPositive@34a3d150</td></tr>
+<tr>
+<td title='HamburgerScript.HamburgerPositive.verifyResetAppStateRemovesProduct()'><b>verifyResetAppStateRemovesProduct</b><br>Test class: HamburgerScript.HamburgerPositive<br/>
+<a href="#Output-1392027380" onClick='toggleBox("Output-1392027380", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1392027380" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1392027380">
+Cart badge cleared after Reset App State<br/>
+Reset App State successfully cleared the cart<br/>
+</div>
+</td>
+<td></td>
+<td>30</td>
+<td>HamburgerScript.HamburgerPositive@6302bbb1</td></tr>
+<tr>
+<td title='CheckoutScript.CheckoutPositive.verifyValidCheckoutInformation()'><b>verifyValidCheckoutInformation</b><br>Test class: CheckoutScript.CheckoutPositive<br/>
+<a href="#Output-1731406622" onClick='toggleBox("Output-1731406622", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1731406622" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1731406622">
+Valid checkout information was accepted and Checkout Overview is displayed<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>CheckoutScript.CheckoutPositive@4135c3b</td></tr>
+<tr>
+<td title='CheckoutScript.CheckoutPositive.verifyCheckoutOverview()'><b>verifyCheckoutOverview</b><br>Test class: CheckoutScript.CheckoutPositive<br/>
+<a href="#Output-1329572464" onClick='toggleBox("Output-1329572464", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1329572464" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1329572464">
+Checkout Overview is displayed successfully<br/>
+Selected product is displayed correctly on Checkout Overview<br/>
+Finish button is displayed on Checkout Overview<br/>
+Cancel button is displayed on Checkout Overview<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>CheckoutScript.CheckoutPositive@4135c3b</td></tr>
+<tr>
+<td title='CartScript.CartPositive.verifyAddedProductVisibleInCart()'><b>verifyAddedProductVisibleInCart</b><br>Test class: CartScript.CartPositive<br/>
+<a href="#Output-409565350" onClick='toggleBox("Output-409565350", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-409565350" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-409565350">
+Added product is displayed in Cart Page<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>CartScript.CartPositive@747ddf94</td></tr>
+<tr>
+<td title='HamburgerScript.HamburgerPositive.verifyHamburgerMenu()'><b>verifyHamburgerMenu</b><br>Test class: HamburgerScript.HamburgerPositive<br/>
+<a href="#Output-630669831" onClick='toggleBox("Output-630669831", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-630669831" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-630669831">
+Hamburger button is displayed<br/>
+All Items is displayed<br/>
+About is displayed<br/>
+Logout is displayed<br/>
+Reset App is displayed<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>HamburgerScript.HamburgerPositive@6302bbb1</td></tr>
+<tr>
+<td title='LoginScript.LoginPositive.validLoginTest()'><b>validLoginTest</b><br>Test class: LoginScript.LoginPositive<br>Parameters: visual_user, secret_sauce<br/>
+<a href="#Output-72623296" onClick='toggleBox("Output-72623296", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-72623296" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-72623296">
+Valid Login Successful<br/>
+Username = visual_user<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>LoginScript.LoginPositive@34a3d150</td></tr>
+<tr>
+<td title='ProductScript.ProductPositive.verifyAddToCart()'><b>verifyAddToCart</b><br>Test class: ProductScript.ProductPositive<br/>
+<a href="#Output-992775130" onClick='toggleBox("Output-992775130", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-992775130" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-992775130">
+Product added to cart and Cart Page opened successfully<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>ProductScript.ProductPositive@2a4fb17b</td></tr>
+<tr>
+<td title='LoginScript.LoginPositive.validLoginTest()'><b>validLoginTest</b><br>Test class: LoginScript.LoginPositive<br>Parameters: problem_user, secret_sauce<br/>
+<a href="#Output-1630790155" onClick='toggleBox("Output-1630790155", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1630790155" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1630790155">
+Valid Login Successful<br/>
+Username = problem_user<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>LoginScript.LoginPositive@34a3d150</td></tr>
+<tr>
+<td title='LoginScript.LoginPositive.validLoginTest()'><b>validLoginTest</b><br>Test class: LoginScript.LoginPositive<br>Parameters: error_user, secret_sauce<br/>
+<a href="#Output-1341812801" onClick='toggleBox("Output-1341812801", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1341812801" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1341812801">
+Valid Login Successful<br/>
+Username = error_user<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>LoginScript.LoginPositive@34a3d150</td></tr>
+<tr>
+<td title='ProductScript.ProductPositive.verifyProductsVisible()'><b>verifyProductsVisible</b><br>Test class: ProductScript.ProductPositive<br/>
+<a href="#Output-1081819622" onClick='toggleBox("Output-1081819622", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1081819622" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1081819622">
+Products are visible on Product Page<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>ProductScript.ProductPositive@2a4fb17b</td></tr>
+<tr>
+<td title='CartScript.CartPositive.verifyCartControls()'><b>verifyCartControls</b><br>Test class: CartScript.CartPositive<br/>
+<a href="#Output-1481751887" onClick='toggleBox("Output-1481751887", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1481751887" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1481751887">
+Remove button is displayed<br/>
+Checkout button is displayed<br/>
+Continue Shopping button is displayed<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>CartScript.CartPositive@747ddf94</td></tr>
+<tr>
+<td title='CheckoutScript.CheckoutPositive.verifyInfoFields()'><b>verifyInfoFields</b><br>Test class: CheckoutScript.CheckoutPositive<br/>
+<a href="#Output-19423" onClick='toggleBox("Output-19423", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-19423" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-19423">
+First Name field is displayed on Checkout Information page<br/>
+Last Name field is displayed on Checkout Information page<br/>
+Postal Code field is displayed on Checkout Information page<br/>
+Continue button is displayed on Checkout Information page<br/>
+Cancel button is displayed on Checkout Information page<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>CheckoutScript.CheckoutPositive@4135c3b</td></tr>
+</table><p>
+</body>
+</html>
