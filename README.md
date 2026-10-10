@@ -92,7 +92,6 @@ Capgemini-Sprint/
 ├── Screenshots/
 ├── target/
 ├── .gitignore
-├── imp.txt
 └── README.md
 ```
 
@@ -146,6 +145,7 @@ Example:
 browser=chrome
 url=https://www.saucedemo.com/
 username=standard_user
+password=secret_sauce
 ```
 
 ### Supported Browsers
