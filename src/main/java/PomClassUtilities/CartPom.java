@@ -65,6 +65,6 @@ public class CartPom {
 
     public boolean isCartEmpty() 
     {
-        return driver.findElements(By.xpath("//div[@data-test='inventory-item']")).isEmpty();
+        return driver.findElements(By.className("cart_item")).isEmpty();
     }
 }
