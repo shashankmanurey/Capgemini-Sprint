@@ -76,7 +76,7 @@ public class LoginPositive extends BaseClass {
 
     //TC-LOGIN-01
     //Verify Username, Password and Login controls are displayed
-    @Test(groups = {"functional"})
+    @Test(groups = {"functionality"})
     public void verifyLoginPageControls() {
 
         LoginPom login = new LoginPom(driver);
@@ -92,7 +92,7 @@ public class LoginPositive extends BaseClass {
 
     // TC-LOGIN-02
     // Valid login
-    @Test(dataProvider = "loginPositiveData", groups = {"functional"})
+    @Test(dataProvider = "loginPositiveData", groups = {"functionality"})
     public void validLoginTest(String username, String password) {
 
         LoginPom login = new LoginPom(driver);

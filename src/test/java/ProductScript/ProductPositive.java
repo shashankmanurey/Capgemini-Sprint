@@ -11,7 +11,7 @@ import PomClassUtilities.ProductPom;
 
 public class ProductPositive extends BaseClass {
 
-    @BeforeMethod
+	@BeforeMethod(groups = {"functionality", "integration", "smoke", "regression", "bva"})
     public void loginBeforeTest() throws Exception 
     {
         loginToApplication();
@@ -19,7 +19,7 @@ public class ProductPositive extends BaseClass {
 
     // TC-PROD-01
     // Verify products are visible on Product Page
-    @Test(groups = {"functional"})
+    @Test(groups = {"functionality"})
     public void verifyProductsVisible() {
 
         ProductPom product = new ProductPom(driver);
@@ -32,7 +32,7 @@ public class ProductPositive extends BaseClass {
 
     // TC-PROD-02
     // Verify Add to Cart and Cart Logo behavior
-    @Test(groups = {"functional"})
+    @Test(groups = {"functionality"})
     public void verifyAddToCart() {
 
         ProductPom product = new ProductPom(driver);

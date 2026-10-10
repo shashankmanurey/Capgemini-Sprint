@@ -18,7 +18,7 @@ import PomClassUtilities.CheckOutPom;
 import PomClassUtilities.ProductPom;
 
 public class CheckoutNegative extends BaseClass {
-    @BeforeMethod
+	@BeforeMethod(groups = {"negative"})
     public void loginBeforeTest() throws Exception 
     {
         loginToApplication();

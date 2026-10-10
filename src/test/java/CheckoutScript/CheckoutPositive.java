@@ -19,7 +19,7 @@ import PomClassUtilities.OverviewPom;
 import PomClassUtilities.ProductPom;
 
 public class CheckoutPositive extends BaseClass {
-    @BeforeMethod
+	@BeforeMethod(groups = {"functionality", "integration", "smoke", "regression", "system", "bva"})
     public void loginBeforeTest() throws Exception 
     {
         loginToApplication();

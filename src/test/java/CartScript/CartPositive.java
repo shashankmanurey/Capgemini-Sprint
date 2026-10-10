@@ -3,6 +3,7 @@ package CartScript;
 import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.BeforeMethod;
+// import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import BaseClassUtility.BaseClass;
@@ -11,7 +12,7 @@ import PomClassUtilities.ProductPom;
 
 public class CartPositive extends BaseClass {
 
-    @BeforeMethod
+    @BeforeMethod(groups = {"functionality", "integration", "smoke", "regression", "bva"})
     public void loginBeforeTest() throws Exception 
     {
         loginToApplication();
@@ -19,8 +20,9 @@ public class CartPositive extends BaseClass {
 
     // TC-CART-01
     // Verify added product is visible in Cart Page
-    @Test(groups = {"functional"})
-    public void verifyAddedProductVisibleInCart() {
+    @Test(groups = {"functionality"})
+    public void verifyAddedProductVisibleInCart() throws Exception {
+
 
         ProductPom product = new ProductPom(driver);
         CartPom cart = new CartPom(driver);
@@ -34,9 +36,10 @@ public class CartPositive extends BaseClass {
 
     // TC-CART-02
     // Verify Remove, Checkout and Continue Shopping controls
-    @Test(groups = {"functional"})
-    public void verifyCartControls() {
+    @Test(groups = {"functionality"})
+    public void verifyCartControls() throws Exception {
 
+        
         ProductPom product = new ProductPom(driver);
         CartPom cart = new CartPom(driver);
 
@@ -56,8 +59,8 @@ public class CartPositive extends BaseClass {
     // TC-CART-03
     // Verify Cart Page to Checkout Page using Checkout
     @Test(groups = {"integration"})
-    public void verifyCartToCheckout() {
-
+    public void verifyCartToCheckout() throws Exception {
+        
         ProductPom product = new ProductPom(driver);
         CartPom cart = new CartPom(driver);
 
@@ -73,8 +76,9 @@ public class CartPositive extends BaseClass {
     // TC-CART-06
     // Verify Cart Page smoke test
     @Test(groups = {"smoke"})
-    public void cartPageSmokeTest() {
+    public void cartPageSmokeTest() throws Exception {
 
+        
         ProductPom product = new ProductPom(driver);
         CartPom cart = new CartPom(driver);
 
@@ -91,8 +95,8 @@ public class CartPositive extends BaseClass {
     // TC-CART-07
     // Verify Continue Shopping smoke test
     @Test(groups = {"smoke"})
-    public void continueShoppingSmokeTest() {
-
+    public void continueShoppingSmokeTest() throws Exception {
+        
         ProductPom product = new ProductPom(driver);
         CartPom cart = new CartPom(driver);
 
@@ -108,7 +112,7 @@ public class CartPositive extends BaseClass {
     // TC-CART-08
     // Verify cart contents after returning from Product Page
     @Test(groups = {"regression"})
-    public void verifyCartContentsAfterReturning() {
+    public void verifyCartContentsAfterReturning() throws Exception {
 
         ProductPom product = new ProductPom(driver);
         CartPom cart = new CartPom(driver);
@@ -133,7 +137,7 @@ public class CartPositive extends BaseClass {
     // TC-CART-09
     // Verify Remove action after returning to Cart
     @Test(groups = {"regression"})
-    public void verifyRemoveAfterReturningToCart() {
+    public void verifyRemoveAfterReturningToCart() throws Exception {
 
         ProductPom product = new ProductPom(driver);
         CartPom cart = new CartPom(driver);
@@ -154,8 +158,8 @@ public class CartPositive extends BaseClass {
     // TC-CART-10
     // Verify cart quantity boundary 0 -> 1 -> 0
     @Test(groups = {"bva"})
-    public void verifyCartQuantityBoundary() {
-
+    public void verifyCartQuantityBoundary() throws Exception {
+        
         ProductPom product = new ProductPom(driver);
         CartPom cart = new CartPom(driver);
 

@@ -16,7 +16,7 @@ import PomClassUtilities.CartPom;
 
 public class HamburgerNegative extends BaseClass {
 
-    @BeforeMethod
+    @BeforeMethod(groups = {"negative"})
     public void loginBeforeTest() throws Exception 
     {
         loginToApplication();

@@ -12,7 +12,7 @@ import PomClassUtilities.ProductPom;
 
 public class CartNegative extends BaseClass {
 
-    @BeforeMethod
+    @BeforeMethod(groups = {"negative"})
     public void loginBeforeTest() throws Exception 
     {
         loginToApplication();

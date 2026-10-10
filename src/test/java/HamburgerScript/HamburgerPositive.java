@@ -14,7 +14,7 @@ import PomClassUtilities.CartPom;
 
 public class HamburgerPositive extends BaseClass {
 
-    @BeforeMethod
+	@BeforeMethod(groups = {"functionality", "integration", "smoke", "regression","system", "bva"})
     public void loginBeforeTest() throws Exception 
     {
         loginToApplication();
@@ -22,7 +22,7 @@ public class HamburgerPositive extends BaseClass {
 
     // TC-HAM-02
     //Verify Hamburger menu options are displayed
-    @Test(groups = {"functional"})
+    @Test(groups = {"functionality"})
     public void verifyHamburgerMenu()
     {
         HamburgerPom ham = new HamburgerPom(driver);
@@ -47,7 +47,7 @@ public class HamburgerPositive extends BaseClass {
 
     // TC-HAM-02
     // Verify Reset App State removes added product
-    @Test(groups = {"functional"})
+    @Test(groups = {"functionality"})
     public void verifyResetAppStateRemovesProduct() {
 
         ProductPom product = new ProductPom(driver);

@@ -11,7 +11,7 @@ import PomClassUtilities.LoginPom;
 
 public class LogoutScript extends BaseClass{
 
-    @BeforeMethod
+	@BeforeMethod(groups = {"functionality"})
     public void loginBeforeTest() throws Exception 
     {
         loginToApplication();
