@@ -67,14 +67,13 @@
 						<artifactId>maven-surefire-plugin</artifactId>
 						<configuration>
 							<suiteXmlFiles>
-								<suiteXmlFile>testing-Bva.xml</suiteXmlFile>
+								<suiteXmlFile>testng-Bva.xml</suiteXmlFile>
 							</suiteXmlFiles>
 						</configuration>
 					</plugin>
 				</plugins>
 			</build>
 		</profile>
-      <profiles>
 
 		<profile>
 			<id>BEX</id>
@@ -94,7 +93,7 @@
 		</profile>
 
     	<profile>
-			<id>BEX</id>
+			<id>CBEX</id>
 			<build>
 				<plugins>
 					<plugin>
@@ -102,7 +101,7 @@
 						<artifactId>maven-surefire-plugin</artifactId>
 						<configuration>
 							<suiteXmlFiles>
-								<suiteXmlFile>testing-cross-browser.xml</suiteXmlFile>
+								<suiteXmlFile>testng-cross-browser.xml</suiteXmlFile>
 							</suiteXmlFiles>
 						</configuration>
 					</plugin>
@@ -119,14 +118,13 @@
 						<artifactId>maven-surefire-plugin</artifactId>
 						<configuration>
 							<suiteXmlFiles>
-								<suiteXmlFile>testing-Functionality.xml</suiteXmlFile>
+								<suiteXmlFile>testng-Functionality.xml</suiteXmlFile>
 							</suiteXmlFiles>
 						</configuration>
 					</plugin>
 				</plugins>
 			</build>
 		</profile>
-	</profiles>
 
   <profile>
 			<id>IT</id>
@@ -137,7 +135,7 @@
 						<artifactId>maven-surefire-plugin</artifactId>
 						<configuration>
 							<suiteXmlFiles>
-								<suiteXmlFile>testing-Integration.xml</suiteXmlFile>
+								<suiteXmlFile>testng-Integration.xml</suiteXmlFile>
 							</suiteXmlFiles>
 						</configuration>
 					</plugin>
@@ -154,7 +152,7 @@
 						<artifactId>maven-surefire-plugin</artifactId>
 						<configuration>
 							<suiteXmlFiles>
-								<suiteXmlFile>testing-Negative.xml</suiteXmlFile>
+								<suiteXmlFile>testng-Negative.xml</suiteXmlFile>
 							</suiteXmlFiles>
 						</configuration>
 					</plugin>
@@ -171,7 +169,7 @@
 						<artifactId>maven-surefire-plugin</artifactId>
 						<configuration>
 							<suiteXmlFiles>
-								<suiteXmlFile>testing-Parallel-Execution.xml</suiteXmlFile>
+								<suiteXmlFile>testng-Parallel-Execution.xml</suiteXmlFile>
 							</suiteXmlFiles>
 						</configuration>
 					</plugin>
@@ -188,7 +186,7 @@
 						<artifactId>maven-surefire-plugin</artifactId>
 						<configuration>
 							<suiteXmlFiles>
-								<suiteXmlFile>testing-Regression.xml</suiteXmlFile>
+								<suiteXmlFile>testng-Regression.xml</suiteXmlFile>
 							</suiteXmlFiles>
 						</configuration>
 					</plugin>
@@ -205,7 +203,7 @@
 						<artifactId>maven-surefire-plugin</artifactId>
 						<configuration>
 							<suiteXmlFiles>
-								<suiteXmlFile>testing-Smoke.xml</suiteXmlFile>
+								<suiteXmlFile>testng-Smoke.xml</suiteXmlFile>
 							</suiteXmlFiles>
 						</configuration>
 					</plugin>
@@ -222,13 +220,15 @@
 						<artifactId>maven-surefire-plugin</artifactId>
 						<configuration>
 							<suiteXmlFiles>
-								<suiteXmlFile>testing-System.xml</suiteXmlFile>
+								<suiteXmlFile>testng-System.xml</suiteXmlFile>
 							</suiteXmlFiles>
 						</configuration>
 					</plugin>
 				</plugins>
 			</build>
 		</profile>
+	</profiles>
+
 
 
   <build>
