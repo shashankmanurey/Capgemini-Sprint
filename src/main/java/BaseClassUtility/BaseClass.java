@@ -10,6 +10,10 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.edge.EdgeOptions;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
+import org.openqa.selenium.firefox.FirefoxProfile;
 import org.testng.Reporter;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
@@ -24,27 +28,27 @@ public class BaseClass {
 
     protected WebDriver driver;
 
-    @BeforeSuite
+    @BeforeSuite(alwaysRun = true)
     public void Bs() {
         System.out.println("Open Database connectivity");
     }
 
-    @AfterSuite
+    @AfterSuite(alwaysRun = true)
     public void As() {
         System.out.println("Close Database connectivity");
     }
 
-    @BeforeTest
+    @BeforeTest(alwaysRun = true)
     public void Bt() {
         System.out.println("Pre-conditions");
     }
 
-    @AfterTest
+    @AfterTest(alwaysRun = true)
     public void At() {
         System.out.println("Post-conditions");
     }
 
-    @BeforeMethod
+    @BeforeMethod(alwaysRun = true)
     public void openApplication() throws Exception {
 
         FileInputStream f = new FileInputStream("src/main/resources/DDT/common.properties");
@@ -78,10 +82,31 @@ public class BaseClass {
             driver = new ChromeDriver(chromeOptions);
 
         } else if (browser.equalsIgnoreCase("edge")) {
+ 
+        	Map<String, Object> edgePrefs = new HashMap<>();
+            edgePrefs.put("credentials_enable_service", false);
+            edgePrefs.put("profile.password_manager_enabled", false);
+            edgePrefs.put("profile.password_manager_leak_detection", false);
 
-            driver = new EdgeDriver();
+            EdgeOptions edgeOptions = new EdgeOptions();
+            edgeOptions.setExperimentalOption("prefs", edgePrefs);
 
-        } else {
+            driver = new EdgeDriver(edgeOptions);
+
+        } else if (browser.equalsIgnoreCase("firefox")) {
+        	
+        	FirefoxOptions firefoxOptions = new FirefoxOptions();
+
+            FirefoxProfile profile = new FirefoxProfile();
+            profile.setPreference("signon.rememberSignons", false);
+            profile.setPreference("signon.autofillForms", false);
+
+            firefoxOptions.setProfile(profile);
+
+            driver = new FirefoxDriver(firefoxOptions);
+        }
+        
+        else {
 
             throw new IllegalArgumentException("Unsupported Browser: " + browser);
         }
@@ -115,10 +140,16 @@ public class BaseClass {
         login.getPassword(password);
         login.getLoginButton();
 
+        boolean loggedIn = login.isProductsPageDisplayed();
+
+        if (!loggedIn) 
+        {
+            throw new RuntimeException("Login failed: Products page was not displayed. Current URL: "+ driver.getCurrentUrl());
+        }
         Reporter.log("Logged in successfully and navigated to Product Page", true);
     }
 
-    @AfterMethod
+    @AfterMethod(alwaysRun = true)
     public void closeApplication() {
 
         System.out.println("Quit browser");
