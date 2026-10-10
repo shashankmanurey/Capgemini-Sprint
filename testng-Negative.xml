@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Testing-Negative">
+  <test thread-count="5" name="Test">
+  <groups>
+  	<run>
+  	<include name = "negative"/>
+  	</run>
+  </groups>
+    <classes>
+      <class name="HamburgerScript.HamburgerNegative"/>
+      <class name="CartScript.CartPositive"/>
+      <class name="CartScript.CartNegative"/>
+      <class name="CheckoutScript.CheckoutNegative"/>
+      <class name="CheckoutScript.CheckoutPositive"/>
+      <class name="HamburgerScript.HamburgerPositive"/>
+      <class name="LoginScript.LogoutScript"/>
+      <class name="LoginScript.LoginPositive"/>
+      <class name="ProductScript.ProductPositive"/>
+      <class name="LoginScript.LoginNegative"/>
+      <class name="ProductScript.ProductNegative"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Testing-Negative -->
