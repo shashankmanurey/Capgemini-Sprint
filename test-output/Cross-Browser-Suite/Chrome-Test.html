@@ -1,0 +1,925 @@
+<html>
+<head>
+<title>TestNG:  Chrome-Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Chrome-Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>66/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sun Oct 11 00:16:49 IST 2026</td>
+</tr>
+<tr><td>Total time:</td><td>532 seconds (532873 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='LoginScript.LoginPositive.loginRegressionTest()'><b>loginRegressionTest</b><br>Test class: LoginScript.LoginPositive<br>Parameters: error_user, secret_sauce<br/>
+<a href="#Output-790511132" onClick='toggleBox("Output-790511132", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-790511132" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-790511132">
+Regression Test Passed for: error_user<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>LoginScript.LoginPositive@3023df74</td></tr>
+<tr>
+<td title='LoginScript.LoginPositive.validLoginTest()'><b>validLoginTest</b><br>Test class: LoginScript.LoginPositive<br>Parameters: problem_user, secret_sauce<br/>
+<a href="#Output-1380563397" onClick='toggleBox("Output-1380563397", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1380563397" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1380563397">
+Valid Login Successful<br/>
+Username = problem_user<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>LoginScript.LoginPositive@3023df74</td></tr>
+<tr>
+<td title='CartScript.CartPositive.verifyRemoveAfterReturningToCart()'><b>verifyRemoveAfterReturningToCart</b><br>Test class: CartScript.CartPositive<br/>
+<a href="#Output-1108136194" onClick='toggleBox("Output-1108136194", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1108136194" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1108136194">
+Remove action works correctly after returning to Cart<br/>
+</div>
+</td>
+<td></td>
+<td>15</td>
+<td>CartScript.CartPositive@35d019a3</td></tr>
+<tr>
+<td title='LoginScript.LoginPositive.verifyLoginPageControls()'><b>verifyLoginPageControls</b><br>Test class: LoginScript.LoginPositive<br/>
+<a href="#Output-213325241" onClick='toggleBox("Output-213325241", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-213325241" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-213325241">
+Username field is displayed<br/>
+Password field is displayed<br/>
+Login button is displayed<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>LoginScript.LoginPositive@3023df74</td></tr>
+<tr>
+<td title='LoginScript.LoginPositive.loginRegressionTest()'><b>loginRegressionTest</b><br>Test class: LoginScript.LoginPositive<br>Parameters: visual_user, secret_sauce<br/>
+<a href="#Output-1303374399" onClick='toggleBox("Output-1303374399", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1303374399" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1303374399">
+Regression Test Passed for: visual_user<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>LoginScript.LoginPositive@3023df74</td></tr>
+<tr>
+<td title='CheckoutScript.CheckoutPositive.verifyCheckoutCompletePage()'><b>verifyCheckoutCompletePage</b><br>Test class: CheckoutScript.CheckoutPositive<br/>
+<a href="#Output-312243725" onClick='toggleBox("Output-312243725", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-312243725" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-312243725">
+Thank you for your order message is displayed on Checkout Complete page<br/>
+Products page is displayed successfully after clicking Back Home<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>CheckoutScript.CheckoutPositive@799f10e1</td></tr>
+<tr>
+<td title='CartScript.CartPositive.verifyAddedProductVisibleInCart()'><b>verifyAddedProductVisibleInCart</b><br>Test class: CartScript.CartPositive<br/>
+<a href="#Output-1681215776" onClick='toggleBox("Output-1681215776", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1681215776" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1681215776">
+Added product is displayed in Cart Page<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>CartScript.CartPositive@35d019a3</td></tr>
+<tr>
+<td title='LoginScript.LoginPositive.loginSmokeTest()'><b>loginSmokeTest</b><br>Test class: LoginScript.LoginPositive<br>Parameters: problem_user, secret_sauce<br/>
+<a href="#Output-2096304619" onClick='toggleBox("Output-2096304619", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2096304619" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2096304619">
+Smoke Test Passed for: problem_user<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>LoginScript.LoginPositive@3023df74</td></tr>
+<tr>
+<td title='LoginScript.LoginNegative.loginTest()'><b>loginTest</b><br>Test class: LoginScript.LoginNegative<br>Parameters: standard_user, <br/>
+<a href="#Output-96446887" onClick='toggleBox("Output-96446887", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-96446887" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-96446887">
+Error Message: Epic sadface: Password is required<br/>
+Username = standard_user Password = <br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>LoginScript.LoginNegative@4562e04d</td></tr>
+<tr>
+<td title='CartScript.CartPositive.verifyCartQuantityBoundary()'><b>verifyCartQuantityBoundary</b><br>Test class: CartScript.CartPositive<br/>
+<a href="#Output-49485418" onClick='toggleBox("Output-49485418", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-49485418" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-49485418">
+Cart boundary changed from 0 to 1 item successfully<br/>
+Cart boundary changed from 1 to 0 items successfully<br/>
+</div>
+</td>
+<td></td>
+<td>15</td>
+<td>CartScript.CartPositive@35d019a3</td></tr>
+<tr>
+<td title='ProductScript.ProductPositive.verifyProductPageToCart()'><b>verifyProductPageToCart</b><br>Test class: ProductScript.ProductPositive<br/>
+<a href="#Output-539395258" onClick='toggleBox("Output-539395258", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-539395258" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-539395258">
+Product Page to Cart Page navigation successful<br/>
+Sauce Labs Backpack is visible in Cart<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>ProductScript.ProductPositive@313ac989</td></tr>
+<tr>
+<td title='ProductScript.ProductPositive.verifyProductsVisible()'><b>verifyProductsVisible</b><br>Test class: ProductScript.ProductPositive<br/>
+<a href="#Output-1710441966" onClick='toggleBox("Output-1710441966", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1710441966" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1710441966">
+Products are visible on Product Page<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>ProductScript.ProductPositive@313ac989</td></tr>
+<tr>
+<td title='CartScript.CartNegative.verifyRemovedProductNotPresent()'><b>verifyRemovedProductNotPresent</b><br>Test class: CartScript.CartNegative<br/>
+<a href="#Output-1783978315" onClick='toggleBox("Output-1783978315", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1783978315" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1783978315">
+Removed product is no longer present in Cart<br/>
+</div>
+</td>
+<td></td>
+<td>15</td>
+<td>CartScript.CartNegative@689604d9</td></tr>
+<tr>
+<td title='ProductScript.ProductPositive.verifyCartLogoBoundaryState()'><b>verifyCartLogoBoundaryState</b><br>Test class: ProductScript.ProductPositive<br/>
+<a href="#Output-1811963934" onClick='toggleBox("Output-1811963934", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1811963934" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1811963934">
+Cart changed from 0 to 1 item successfully<br/>
+Cart changed from 1 to 0 items successfully<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>ProductScript.ProductPositive@313ac989</td></tr>
+<tr>
+<td title='HamburgerScript.HamburgerPositive.verifyLogoutAfterNavigation()'><b>verifyLogoutAfterNavigation</b><br>Test class: HamburgerScript.HamburgerPositive<br/>
+<a href="#Output-172608982" onClick='toggleBox("Output-172608982", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-172608982" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-172608982">
+Navigated to Cart Page successfully<br/>
+Logout works after Product and Cart navigation<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>HamburgerScript.HamburgerPositive@4c371370</td></tr>
+<tr>
+<td title='LoginScript.LoginPositive.validLoginTest()'><b>validLoginTest</b><br>Test class: LoginScript.LoginPositive<br>Parameters: error_user, secret_sauce<br/>
+<a href="#Output-1314653507" onClick='toggleBox("Output-1314653507", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1314653507" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1314653507">
+Valid Login Successful<br/>
+Username = error_user<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>LoginScript.LoginPositive@3023df74</td></tr>
+<tr>
+<td title='LoginScript.LoginPositive.loginSmokeTest()'><b>loginSmokeTest</b><br>Test class: LoginScript.LoginPositive<br>Parameters: error_user, secret_sauce<br/>
+<a href="#Output-1384315170" onClick='toggleBox("Output-1384315170", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1384315170" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1384315170">
+Smoke Test Passed for: error_user<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>LoginScript.LoginPositive@3023df74</td></tr>
+<tr>
+<td title='CartScript.CartPositive.verifyCartContentsAfterReturning()'><b>verifyCartContentsAfterReturning</b><br>Test class: CartScript.CartPositive<br/>
+<a href="#Output-413990536" onClick='toggleBox("Output-413990536", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-413990536" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-413990536">
+Product is displayed in Cart<br/>
+Returned to Product Page successfully<br/>
+Cart contents are retained after returning from Product Page<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>CartScript.CartPositive@35d019a3</td></tr>
+<tr>
+<td title='CartScript.CartPositive.continueShoppingSmokeTest()'><b>continueShoppingSmokeTest</b><br>Test class: CartScript.CartPositive<br/>
+<a href="#Output-957387062" onClick='toggleBox("Output-957387062", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-957387062" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-957387062">
+Continue Shopping successfully navigated to Product Page<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>CartScript.CartPositive@35d019a3</td></tr>
+<tr>
+<td title='ProductScript.ProductPositive.filterDropdownSmokeTest()'><b>filterDropdownSmokeTest</b><br>Test class: ProductScript.ProductPositive<br/>
+<a href="#Output-795528652" onClick='toggleBox("Output-795528652", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-795528652" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-795528652">
+Name A to Z filter passed<br/>
+Name Z to A filter passed<br/>
+Price Low to High filter passed<br/>
+Price High to Low filter passed<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>ProductScript.ProductPositive@313ac989</td></tr>
+<tr>
+<td title='CartScript.CartPositive.verifyCartControls()'><b>verifyCartControls</b><br>Test class: CartScript.CartPositive<br/>
+<a href="#Output-1778257620" onClick='toggleBox("Output-1778257620", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1778257620" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1778257620">
+Remove button is displayed<br/>
+Checkout button is displayed<br/>
+Continue Shopping button is displayed<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>CartScript.CartPositive@35d019a3</td></tr>
+<tr>
+<td title='CheckoutScript.CheckoutPositive.verifyCheckoutRegressionFlow()'><b>verifyCheckoutRegressionFlow</b><br>Test class: CheckoutScript.CheckoutPositive<br/>
+<a href="#Output-1454226183" onClick='toggleBox("Output-1454226183", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1454226183" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1454226183">
+Checkout regression flow completed successfully and order confirmation is displayed<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>CheckoutScript.CheckoutPositive@799f10e1</td></tr>
+<tr>
+<td title='LoginScript.LoginPositive.loginSmokeTest()'><b>loginSmokeTest</b><br>Test class: LoginScript.LoginPositive<br>Parameters: standard_user, secret_sauce<br/>
+<a href="#Output-974764339" onClick='toggleBox("Output-974764339", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-974764339" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-974764339">
+Smoke Test Passed for: standard_user<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>LoginScript.LoginPositive@3023df74</td></tr>
+<tr>
+<td title='HamburgerScript.HamburgerNegative.verifyMenuUnavailableAfterLogout()'><b>verifyMenuUnavailableAfterLogout</b><br>Test class: HamburgerScript.HamburgerNegative<br/>
+<a href="#Output-1673916398" onClick='toggleBox("Output-1673916398", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1673916398" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1673916398">
+Hamburger menu is unavailable after Logout<br/>
+</div>
+</td>
+<td></td>
+<td>15</td>
+<td>HamburgerScript.HamburgerNegative@77847718</td></tr>
+<tr>
+<td title='CartScript.CartPositive.verifyCartToCheckout()'><b>verifyCartToCheckout</b><br>Test class: CartScript.CartPositive<br/>
+<a href="#Output-1930842682" onClick='toggleBox("Output-1930842682", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1930842682" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1930842682">
+Cart Page to Checkout Page navigation successful<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>CartScript.CartPositive@35d019a3</td></tr>
+<tr>
+<td title='HamburgerScript.HamburgerPositive.verifyHamburgerMenu()'><b>verifyHamburgerMenu</b><br>Test class: HamburgerScript.HamburgerPositive<br/>
+<a href="#Output-1680256267" onClick='toggleBox("Output-1680256267", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1680256267" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1680256267">
+Hamburger button is displayed<br/>
+All Items is displayed<br/>
+About is displayed<br/>
+Logout is displayed<br/>
+Reset App is displayed<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>HamburgerScript.HamburgerPositive@4c371370</td></tr>
+<tr>
+<td title='LoginScript.LoginPositive.validLoginTest()'><b>validLoginTest</b><br>Test class: LoginScript.LoginPositive<br>Parameters: standard_user, secret_sauce<br/>
+<a href="#Output-553263317" onClick='toggleBox("Output-553263317", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-553263317" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-553263317">
+Valid Login Successful<br/>
+Username = standard_user<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>LoginScript.LoginPositive@3023df74</td></tr>
+<tr>
+<td title='HamburgerScript.HamburgerPositive.verifyLogoutNavigation()'><b>verifyLogoutNavigation</b><br>Test class: HamburgerScript.HamburgerPositive<br/>
+<a href="#Output-1926185978" onClick='toggleBox("Output-1926185978", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1926185978" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1926185978">
+Logout navigated to Login Page successfully<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>HamburgerScript.HamburgerPositive@4c371370</td></tr>
+<tr>
+<td title='CheckoutScript.CheckoutNegative.verifyBlankZipIsRejected()'><b>verifyBlankZipIsRejected</b><br>Test class: CheckoutScript.CheckoutNegative<br/>
+<a href="#Output-37590923" onClick='toggleBox("Output-37590923", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-37590923" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-37590923">
+Blank Zip Code was rejected and Checkout Information page remained displayed<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>CheckoutScript.CheckoutNegative@18078bef</td></tr>
+<tr>
+<td title='LoginScript.LoginPositive.loginNavigationTest()'><b>loginNavigationTest</b><br>Test class: LoginScript.LoginPositive<br>Parameters: error_user, secret_sauce<br/>
+<a href="#Output-366407905" onClick='toggleBox("Output-366407905", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-366407905" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-366407905">
+Navigation successful for: error_user<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>LoginScript.LoginPositive@3023df74</td></tr>
+<tr>
+<td title='LoginScript.LogoutScript.verifyLogOut()'><b>verifyLogOut</b><br>Test class: LoginScript.LogoutScript<br/>
+<a href="#Output-809313413" onClick='toggleBox("Output-809313413", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-809313413" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-809313413">
+The Logout Functionality is working as expected<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>LoginScript.LogoutScript@145f66e3</td></tr>
+<tr>
+<td title='CheckoutScript.CheckoutPositive.verifyCheckoutOverview()'><b>verifyCheckoutOverview</b><br>Test class: CheckoutScript.CheckoutPositive<br/>
+<a href="#Output-490625541" onClick='toggleBox("Output-490625541", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-490625541" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-490625541">
+Checkout Overview is displayed successfully<br/>
+Selected product is displayed correctly on Checkout Overview<br/>
+Finish button is displayed on Checkout Overview<br/>
+Cancel button is displayed on Checkout Overview<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>CheckoutScript.CheckoutPositive@799f10e1</td></tr>
+<tr>
+<td title='LoginScript.LoginPositive.loginSmokeTest()'><b>loginSmokeTest</b><br>Test class: LoginScript.LoginPositive<br>Parameters: visual_user, secret_sauce<br/>
+<a href="#Output-111696403" onClick='toggleBox("Output-111696403", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-111696403" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-111696403">
+Smoke Test Passed for: visual_user<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>LoginScript.LoginPositive@3023df74</td></tr>
+<tr>
+<td title='LoginScript.LoginPositive.loginRegressionTest()'><b>loginRegressionTest</b><br>Test class: LoginScript.LoginPositive<br>Parameters: standard_user, secret_sauce<br/>
+<a href="#Output-1387966343" onClick='toggleBox("Output-1387966343", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1387966343" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1387966343">
+Regression Test Passed for: standard_user<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>LoginScript.LoginPositive@3023df74</td></tr>
+<tr>
+<td title='LoginScript.LoginPositive.loginRegressionTest()'><b>loginRegressionTest</b><br>Test class: LoginScript.LoginPositive<br>Parameters: performance_glitch_user, secret_sauce<br/>
+<a href="#Output-430433816" onClick='toggleBox("Output-430433816", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-430433816" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-430433816">
+Regression Test Passed for: performance_glitch_user<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>LoginScript.LoginPositive@3023df74</td></tr>
+<tr>
+<td title='LoginScript.LoginPositive.loginNavigationTest()'><b>loginNavigationTest</b><br>Test class: LoginScript.LoginPositive<br>Parameters: standard_user, secret_sauce<br/>
+<a href="#Output-470046148" onClick='toggleBox("Output-470046148", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-470046148" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-470046148">
+Navigation successful for: standard_user<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>LoginScript.LoginPositive@3023df74</td></tr>
+<tr>
+<td title='HamburgerScript.HamburgerPositive.verifyResetAppStateRemovesProduct()'><b>verifyResetAppStateRemovesProduct</b><br>Test class: HamburgerScript.HamburgerPositive<br/>
+<a href="#Output-1794394038" onClick='toggleBox("Output-1794394038", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1794394038" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1794394038">
+Cart badge cleared after Reset App State<br/>
+Reset App State successfully cleared the cart<br/>
+</div>
+</td>
+<td></td>
+<td>30</td>
+<td>HamburgerScript.HamburgerPositive@4c371370</td></tr>
+<tr>
+<td title='ProductScript.ProductPositive.verifyAddToCart()'><b>verifyAddToCart</b><br>Test class: ProductScript.ProductPositive<br/>
+<a href="#Output-2023142608" onClick='toggleBox("Output-2023142608", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2023142608" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2023142608">
+Product added to cart and Cart Page opened successfully<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>ProductScript.ProductPositive@313ac989</td></tr>
+<tr>
+<td title='LoginScript.LoginNegative.loginTest()'><b>loginTest</b><br>Test class: LoginScript.LoginNegative<br>Parameters: invalid_user, secret_sauce<br/>
+<a href="#Output-1685319477" onClick='toggleBox("Output-1685319477", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1685319477" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1685319477">
+Error Message: Epic sadface: Username and password do not match any user in this service<br/>
+Username = invalid_user Password = secret_sauce<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>LoginScript.LoginNegative@4562e04d</td></tr>
+<tr>
+<td title='HamburgerScript.HamburgerNegative.verifyResetWithEmptyCart()'><b>verifyResetWithEmptyCart</b><br>Test class: HamburgerScript.HamburgerNegative<br/>
+<a href="#Output-1520656618" onClick='toggleBox("Output-1520656618", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1520656618" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1520656618">
+Reset App State handles an empty cart correctly<br/>
+</div>
+</td>
+<td></td>
+<td>45</td>
+<td>HamburgerScript.HamburgerNegative@77847718</td></tr>
+<tr>
+<td title='CheckoutScript.CheckoutNegative.verifyBlankFirstNameIsRejected()'><b>verifyBlankFirstNameIsRejected</b><br>Test class: CheckoutScript.CheckoutNegative<br/>
+<a href="#Output-2050791921" onClick='toggleBox("Output-2050791921", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2050791921" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2050791921">
+Blank First Name was rejected and Checkout Information page remained displayed<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>CheckoutScript.CheckoutNegative@18078bef</td></tr>
+<tr>
+<td title='CheckoutScript.CheckoutNegative.verifyBlankLastNameIsRejected()'><b>verifyBlankLastNameIsRejected</b><br>Test class: CheckoutScript.CheckoutNegative<br/>
+<a href="#Output-2087202342" onClick='toggleBox("Output-2087202342", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2087202342" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2087202342">
+Blank Last Name was rejected and Checkout Information page remained displayed<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>CheckoutScript.CheckoutNegative@18078bef</td></tr>
+<tr>
+<td title='ProductScript.ProductNegative.verifyEmptyCartNavigation()'><b>verifyEmptyCartNavigation</b><br>Test class: ProductScript.ProductNegative<br/>
+<a href="#Output-515324133" onClick='toggleBox("Output-515324133", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-515324133" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-515324133">
+Cart Page opened successfully with no selected product<br/>
+Empty Cart state is handled correctly<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>ProductScript.ProductNegative@2a65fe7c</td></tr>
+<tr>
+<td title='HamburgerScript.HamburgerPositive.resetAppStateSmokeTest()'><b>resetAppStateSmokeTest</b><br>Test class: HamburgerScript.HamburgerPositive<br/>
+<a href="#Output-888391968" onClick='toggleBox("Output-888391968", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-888391968" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-888391968">
+Reset App State smoke test passed<br/>
+</div>
+</td>
+<td></td>
+<td>15</td>
+<td>HamburgerScript.HamburgerPositive@4c371370</td></tr>
+<tr>
+<td title='HamburgerScript.HamburgerPositive.verifyResetAfterAddAndRemove()'><b>verifyResetAfterAddAndRemove</b><br>Test class: HamburgerScript.HamburgerPositive<br/>
+<a href="#Output-869196570" onClick='toggleBox("Output-869196570", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-869196570" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-869196570">
+Reset App State cleared the cart after add/remove operations<br/>
+</div>
+</td>
+<td></td>
+<td>31</td>
+<td>HamburgerScript.HamburgerPositive@4c371370</td></tr>
+<tr>
+<td title='CheckoutScript.CheckoutPositive.verifyCheckoutInformationToOverview()'><b>verifyCheckoutInformationToOverview</b><br>Test class: CheckoutScript.CheckoutPositive<br/>
+<a href="#Output-1762031582" onClick='toggleBox("Output-1762031582", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1762031582" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1762031582">
+Checkout Information successfully navigated to Checkout Overview<br/>
+Selected product is retained on Checkout Overview<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>CheckoutScript.CheckoutPositive@799f10e1</td></tr>
+<tr>
+<td title='CartScript.CartNegative.verifyEmptyCart()'><b>verifyEmptyCart</b><br>Test class: CartScript.CartNegative<br/>
+<a href="#Output-837237183" onClick='toggleBox("Output-837237183", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-837237183" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-837237183">
+Cart Page opened successfully<br/>
+Empty Cart does not contain any selected product<br/>
+</div>
+</td>
+<td></td>
+<td>15</td>
+<td>CartScript.CartNegative@689604d9</td></tr>
+<tr>
+<td title='CartScript.CartPositive.cartPageSmokeTest()'><b>cartPageSmokeTest</b><br>Test class: CartScript.CartPositive<br/>
+<a href="#Output-399149970" onClick='toggleBox("Output-399149970", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-399149970" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-399149970">
+Product is displayed in Cart Page<br/>
+Checkout control is available<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>CartScript.CartPositive@35d019a3</td></tr>
+<tr>
+<td title='CheckoutScript.CheckoutPositive.verifyCompleteSystemPurchaseFlow()'><b>verifyCompleteSystemPurchaseFlow</b><br>Test class: CheckoutScript.CheckoutPositive<br/>
+<a href="#Output-620534437" onClick='toggleBox("Output-620534437", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-620534437" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-620534437">
+Login successful and Products page is displayed<br/>
+Product added to cart successfully<br/>
+Cart opened and selected product is displayed<br/>
+Checkout Information page is displayed<br/>
+Valid checkout information entered successfully<br/>
+Checkout Information submitted and Checkout Overview is displayed<br/>
+Complete system purchase flow completed successfully and order confirmation is displayed<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>CheckoutScript.CheckoutPositive@799f10e1</td></tr>
+<tr>
+<td title='LoginScript.LoginPositive.validLoginTest()'><b>validLoginTest</b><br>Test class: LoginScript.LoginPositive<br>Parameters: performance_glitch_user, secret_sauce<br/>
+<a href="#Output-1758818359" onClick='toggleBox("Output-1758818359", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1758818359" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1758818359">
+Valid Login Successful<br/>
+Username = performance_glitch_user<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>LoginScript.LoginPositive@3023df74</td></tr>
+<tr>
+<td title='ProductScript.ProductPositive.verifyProductVisibilityAfterSorting()'><b>verifyProductVisibilityAfterSorting</b><br>Test class: ProductScript.ProductPositive<br/>
+<a href="#Output-1434727271" onClick='toggleBox("Output-1434727271", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1434727271" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1434727271">
+Products remain visible after Name A to Z sorting<br/>
+Products remain visible after Price Low to High sorting<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>ProductScript.ProductPositive@313ac989</td></tr>
+<tr>
+<td title='LoginScript.LoginNegative.loginTest()'><b>loginTest</b><br>Test class: LoginScript.LoginNegative<br>Parameters: standard_user, invalid_password<br/>
+<a href="#Output-612057373" onClick='toggleBox("Output-612057373", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-612057373" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-612057373">
+Error Message: Epic sadface: Username and password do not match any user in this service<br/>
+Username = standard_user Password = invalid_password<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>LoginScript.LoginNegative@4562e04d</td></tr>
+<tr>
+<td title='LoginScript.LoginPositive.loginNavigationTest()'><b>loginNavigationTest</b><br>Test class: LoginScript.LoginPositive<br>Parameters: performance_glitch_user, secret_sauce<br/>
+<a href="#Output-880234640" onClick='toggleBox("Output-880234640", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-880234640" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-880234640">
+Navigation successful for: performance_glitch_user<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>LoginScript.LoginPositive@3023df74</td></tr>
+<tr>
+<td title='ProductScript.ProductNegative.verifyProductAfterRemoval()'><b>verifyProductAfterRemoval</b><br>Test class: ProductScript.ProductNegative<br/>
+<a href="#Output-1494069354" onClick='toggleBox("Output-1494069354", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1494069354" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1494069354">
+Add to Cart is available again after product removal<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>ProductScript.ProductNegative@2a65fe7c</td></tr>
+<tr>
+<td title='LoginScript.LoginPositive.validLoginTest()'><b>validLoginTest</b><br>Test class: LoginScript.LoginPositive<br>Parameters: visual_user, secret_sauce<br/>
+<a href="#Output-1607833149" onClick='toggleBox("Output-1607833149", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1607833149" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1607833149">
+Valid Login Successful<br/>
+Username = visual_user<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>LoginScript.LoginPositive@3023df74</td></tr>
+<tr>
+<td title='LoginScript.LoginNegative.loginTest()'><b>loginTest</b><br>Test class: LoginScript.LoginNegative<br>Parameters: , secret_sauce<br/>
+<a href="#Output-1659569415" onClick='toggleBox("Output-1659569415", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1659569415" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1659569415">
+Error Message: Epic sadface: Username is required<br/>
+Username =  Password = secret_sauce<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>LoginScript.LoginNegative@4562e04d</td></tr>
+<tr>
+<td title='HamburgerScript.HamburgerPositive.verifyCompleteHamburgerWorkflow()'><b>verifyCompleteHamburgerWorkflow</b><br>Test class: HamburgerScript.HamburgerPositive<br/>
+<a href="#Output-1848075465" onClick='toggleBox("Output-1848075465", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1848075465" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1848075465">
+Hamburger menu controls are displayed<br/>
+Added product is present in Cart<br/>
+Cart state reset successfully<br/>
+Complete Hamburger menu workflow passed<br/>
+</div>
+</td>
+<td></td>
+<td>17</td>
+<td>HamburgerScript.HamburgerPositive@4c371370</td></tr>
+<tr>
+<td title='ProductScript.ProductPositive.verifyAddToCartAfterFilter()'><b>verifyAddToCartAfterFilter</b><br>Test class: ProductScript.ProductPositive<br/>
+<a href="#Output-366783026" onClick='toggleBox("Output-366783026", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-366783026" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-366783026">
+Add to Cart after filter Regression Test Passed<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>ProductScript.ProductPositive@313ac989</td></tr>
+<tr>
+<td title='LoginScript.LoginPositive.loginRegressionTest()'><b>loginRegressionTest</b><br>Test class: LoginScript.LoginPositive<br>Parameters: problem_user, secret_sauce<br/>
+<a href="#Output-685669934" onClick='toggleBox("Output-685669934", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-685669934" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-685669934">
+Regression Test Passed for: problem_user<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>LoginScript.LoginPositive@3023df74</td></tr>
+<tr>
+<td title='LoginScript.LoginPositive.loginNavigationTest()'><b>loginNavigationTest</b><br>Test class: LoginScript.LoginPositive<br>Parameters: visual_user, secret_sauce<br/>
+<a href="#Output-1528705900" onClick='toggleBox("Output-1528705900", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1528705900" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1528705900">
+Navigation successful for: visual_user<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>LoginScript.LoginPositive@3023df74</td></tr>
+<tr>
+<td title='CheckoutScript.CheckoutPositive.verifyInfoFields()'><b>verifyInfoFields</b><br>Test class: CheckoutScript.CheckoutPositive<br/>
+<a href="#Output-1068773063" onClick='toggleBox("Output-1068773063", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1068773063" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1068773063">
+First Name field is displayed on Checkout Information page<br/>
+Last Name field is displayed on Checkout Information page<br/>
+Postal Code field is displayed on Checkout Information page<br/>
+Continue button is displayed on Checkout Information page<br/>
+Cancel button is displayed on Checkout Information page<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>CheckoutScript.CheckoutPositive@799f10e1</td></tr>
+<tr>
+<td title='LoginScript.LoginPositive.loginNavigationTest()'><b>loginNavigationTest</b><br>Test class: LoginScript.LoginPositive<br>Parameters: problem_user, secret_sauce<br/>
+<a href="#Output-1182152320" onClick='toggleBox("Output-1182152320", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1182152320" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1182152320">
+Navigation successful for: problem_user<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>LoginScript.LoginPositive@3023df74</td></tr>
+<tr>
+<td title='LoginScript.LoginPositive.loginSmokeTest()'><b>loginSmokeTest</b><br>Test class: LoginScript.LoginPositive<br>Parameters: performance_glitch_user, secret_sauce<br/>
+<a href="#Output-1336401756" onClick='toggleBox("Output-1336401756", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1336401756" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1336401756">
+Smoke Test Passed for: performance_glitch_user<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>LoginScript.LoginPositive@3023df74</td></tr>
+<tr>
+<td title='HamburgerScript.HamburgerPositive.hamburgerMenuSmokeTest()'><b>hamburgerMenuSmokeTest</b><br>Test class: HamburgerScript.HamburgerPositive<br/>
+<a href="#Output-1775883042" onClick='toggleBox("Output-1775883042", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1775883042" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1775883042">
+All Items link is displayed<br/>
+Logout link is displayed<br/>
+Reset App State link is displayed<br/>
+Hamburger menu smoke test passed<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>HamburgerScript.HamburgerPositive@4c371370</td></tr>
+<tr>
+<td title='ProductScript.ProductPositive.productPageSmokeTest()'><b>productPageSmokeTest</b><br>Test class: ProductScript.ProductPositive<br/>
+<a href="#Output-808512972" onClick='toggleBox("Output-808512972", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-808512972" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-808512972">
+Products are displayed on Product Page<br/>
+Product Page Smoke Test Passed<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>ProductScript.ProductPositive@313ac989</td></tr>
+<tr>
+<td title='CheckoutScript.CheckoutPositive.verifyValidCheckoutInformation()'><b>verifyValidCheckoutInformation</b><br>Test class: CheckoutScript.CheckoutPositive<br/>
+<a href="#Output-502851205" onClick='toggleBox("Output-502851205", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-502851205" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-502851205">
+Valid checkout information was accepted and Checkout Overview is displayed<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>CheckoutScript.CheckoutPositive@799f10e1</td></tr>
+</table><p>
+</body>
+</html>

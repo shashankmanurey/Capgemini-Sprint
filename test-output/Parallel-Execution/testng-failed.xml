@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="classes" name="Failed suite [Parallel-Execution]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="classes" name="Test(failed)">
+    <classes>
+      <class name="CartScript.CartNegative">
+        <methods>
+          <include name="Bt"/>
+          <include name="As"/>
+          <include name="openApplication"/>
+          <include name="Bs"/>
+          <include name="At"/>
+          <include name="closeApplication"/>
+          <include name="loginBeforeTest"/>
+          <include name="verifyRemovedProductNotPresent"/>
+        </methods>
+      </class> <!-- CartScript.CartNegative -->
+      <class name="CartScript.CartPositive">
+        <methods>
+          <include name="Bt"/>
+          <include name="As"/>
+          <include name="verifyRemoveAfterReturningToCart"/>
+          <include name="openApplication"/>
+          <include name="verifyCartQuantityBoundary"/>
+          <include name="Bs"/>
+          <include name="At"/>
+          <include name="loginBeforeTest"/>
+          <include name="verifyCartToCheckout"/>
+          <include name="closeApplication"/>
+        </methods>
+      </class> <!-- CartScript.CartPositive -->
+      <class name="HamburgerScript.HamburgerPositive">
+        <methods>
+          <include name="verifyLogoutAfterNavigation"/>
+          <include name="hamburgerMenuSmokeTest"/>
+          <include name="verifyResetAfterAddAndRemove"/>
+          <include name="loginBeforeTest"/>
+          <include name="verifyResetAppStateRemovesProduct"/>
+          <include name="verifyLogoutNavigation"/>
+          <include name="Bt"/>
+          <include name="As"/>
+          <include name="openApplication"/>
+          <include name="Bs"/>
+          <include name="verifyCompleteHamburgerWorkflow"/>
+          <include name="At"/>
+          <include name="verifyHamburgerMenu"/>
+          <include name="resetAppStateSmokeTest"/>
+          <include name="closeApplication"/>
+        </methods>
+      </class> <!-- HamburgerScript.HamburgerPositive -->
+      <class name="CheckoutScript.CheckoutPositive">
+        <methods>
+          <include name="Bt"/>
+          <include name="As"/>
+          <include name="verifyCompleteSystemPurchaseFlow"/>
+          <include name="openApplication"/>
+          <include name="Bs"/>
+          <include name="verifyValidCheckoutInformation"/>
+          <include name="loginBeforeTest"/>
+          <include name="At"/>
+          <include name="verifyInfoFields"/>
+          <include name="verifyCheckoutRegressionFlow"/>
+          <include name="closeApplication"/>
+        </methods>
+      </class> <!-- CheckoutScript.CheckoutPositive -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Parallel-Execution] -->

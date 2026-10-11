@@ -21,6 +21,8 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Parameters;
+import org.testng.annotations.Optional;
 
 import PomClassUtilities.LoginPom;
 
@@ -47,9 +49,10 @@ public class BaseClass {
     public void At() {
         System.out.println("Post-conditions");
     }
-
+    
+    @Parameters("browser")
     @BeforeMethod(alwaysRun = true)
-    public void openApplication() throws Exception {
+    public void openApplication(@Optional("chrome") String browser) throws Exception {
 
         FileInputStream f = new FileInputStream("src/main/resources/DDT/common.properties");
 
@@ -57,7 +60,6 @@ public class BaseClass {
         p.load(f);
         f.close();
 
-        String browser = p.getProperty("browser");
         String url = p.getProperty("url");
 
         if (browser == null) {
