@@ -10,7 +10,6 @@ This repository is built for automated UI testing of the Sauce Demo website usin
 - TestNG
 - Apache POI
 - Maven
-- Log4j
 
 The automation suite validates core user journeys and verifies that application behavior remains stable across positive, negative, smoke, regression, integration, system, and boundary value scenarios.
 
