@@ -93,11 +93,17 @@ public class BaseClass {
             EdgeOptions edgeOptions = new EdgeOptions();
             edgeOptions.setExperimentalOption("prefs", edgePrefs);
 
+            edgeOptions.addArguments("--headless=new");
+            edgeOptions.addArguments("--disable-extensions");
+            edgeOptions.addArguments("--disable-gpu");
+
             driver = new EdgeDriver(edgeOptions);
 
         } else if (browser.equalsIgnoreCase("firefox")) {
         	
         	FirefoxOptions firefoxOptions = new FirefoxOptions();
+
+            firefoxOptions.addArguments("-headless");
 
             FirefoxProfile profile = new FirefoxProfile();
             profile.setPreference("signon.rememberSignons", false);
@@ -114,7 +120,7 @@ public class BaseClass {
         }
 
         driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 
         driver.get(url);
 
