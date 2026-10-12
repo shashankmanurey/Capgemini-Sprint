@@ -4,18 +4,6 @@
   <test thread-count="5" name="Firefox-Test(failed)">
     <parameter name="browser" value="firefox"/>
     <classes>
-      <class name="CartScript.CartPositive">
-        <methods>
-          <include name="Bt"/>
-          <include name="As"/>
-          <include name="openApplication"/>
-          <include name="Bs"/>
-          <include name="verifyCartContentsAfterReturning"/>
-          <include name="At"/>
-          <include name="loginBeforeTest"/>
-          <include name="closeApplication"/>
-        </methods>
-      </class> <!-- CartScript.CartPositive -->
       <class name="HamburgerScript.HamburgerPositive">
         <methods>
           <include name="Bt"/>
