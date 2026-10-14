@@ -67,6 +67,7 @@ Capgemini-Sprint/
 │       │   │   └── LogoutScript.java
 │       │   ├── ProductScript/
 │       │   │   └── ProductPositive.java
+|       |   |   └── ProductNegative.java
 │       │   ├── CartScript/
 │       │   │   ├── CartPositive.java
 │       │   │   └── CartNegative.java
@@ -75,7 +76,7 @@ Capgemini-Sprint/
 │       │   │   └── CheckoutNegative.java
 │       │   ├── HamburgerScript/
 │       │   │   └── HamburgerPositive.java
-│       │   └── ...
+|       |   |   └── HamburgerNegative.java
 │       └── resources/
 │           └── SauceDemoCreds.xlsx
 ├── pom.xml
