@@ -1,6 +1,6 @@
-# Capgemini Sprint - Selenium Test Automation Project
+# Swag Labs - Selenium Test Automation Project
 
-A Java-based Selenium TestNG automation project designed for end-to-end validation of the Sauce Demo e-commerce application. The project follows a Page Object Model (POM) structure and covers login, product, cart, checkout, hamburger menu, and negative test scenarios.
+A Java-based Selenium TestNG automation project designed for end-to-end validation of the Swag Labs/Sauce Demo e-commerce application. The project follows a Page Object Model (POM) structure and covers login, product, cart, checkout, hamburger menu, and negative test scenarios.
 
 ## Project Overview
 
